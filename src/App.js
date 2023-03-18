@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import Cards from "./components/Cards/Cards";
-import { pokimonData } from "./components/data";
 import LandingPage from "./components/LandingPage/LandingPage";
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
   const getData = async () => {
     let req = await fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`);
     let res = await req.json();
-    console.log(res);
+    await console.log(res.ok);
     let obj = {
       name: res.name,
       img: res?.sprites?.back_default,

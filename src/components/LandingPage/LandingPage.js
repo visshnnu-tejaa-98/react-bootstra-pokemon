@@ -12,7 +12,7 @@ const LandingPage = ({ searchTerm, setSearchTerm, handleSubmit }) => {
               type="text"
               className="form-control"
               id="searchterm"
-              placeholder="Search pokemon"
+              placeholder="Search pokemon, Eg: pikachu"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               required
@@ -22,7 +22,7 @@ const LandingPage = ({ searchTerm, setSearchTerm, handleSubmit }) => {
               type="button"
               onClick={handleSubmit}
             >
-              Button
+              Search
             </button>
           </div>
         </form>
