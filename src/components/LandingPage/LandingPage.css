@@ -1,0 +1,19 @@
+.form {
+  width: 30rem;
+  margin: auto;
+  display: flex;
+}
+
+.form div {
+  width: 100%;
+  display: flex;
+}
+
+.form div input {
+  width: 75%;
+}
+
+.form div button {
+  width: 20%;
+  margin-left: 5%;
+}
